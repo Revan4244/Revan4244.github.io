@@ -1,7 +1,7 @@
 :root {
     --primary-color: #4a6fa5;
-    --secondary-color: #166088;
-    --accent-color: #4fc3dc;
+    --secondary-color: #bf5911;
+    --accent-color: #b35918;
     --light-color: #f8f9fa;
     --dark-color: #343a40;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,7 +55,7 @@ header {
 
 .bubble {
     position: absolute;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(227, 8, 8, 0.1);
     border-radius: 50%;
     animation: float 8s ease-in-out infinite;
 }
@@ -577,52 +577,122 @@ footer {
     }
 }
 
-textarea {
-    font-family: monospace;
+.text-analyzer {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.text-analyzer .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text-analyzer h2 {
+    font-size: 2.2rem;
+    color: #4e54c8;
+}
+
+.text-analyzer p {
     font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    color: #6c757d;
 }
 
-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
+.text-analyzer textarea {
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 2px solid #ced4da;
+    resize: vertical;
+    transition: 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.text-analyzer textarea:focus {
+    border-color: #4e54c8;
+    box-shadow: 0 0 10px rgba(78, 84, 200, 0.2);
+    outline: none;
+}
+
+.text-analyzer button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
     color: white;
-    border-radius: 8px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(78, 84, 200, 0.25);
 }
 
-button:hover {
-    background-color: #0056b3;
+.text-analyzer button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(78, 84, 200, 0.35);
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4e54c8;
+    outline: none;
+    box-shadow: 0 0 10px rgba(78, 84, 200, 0.3);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
 }
 
 .contact-form {
     max-width: 600px;
     margin: auto;
+    text-align: center;
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-button[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}

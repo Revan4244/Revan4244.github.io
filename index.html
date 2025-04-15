@@ -223,7 +223,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>Get In Touch</h2>
-                <p>Feel free to reach out to me for collaborations, opportunities, or just to say hi!</p>
+                <p>Feel free to reach out to me for collaborations, opportunities, or just to say hi!</p><br>
             </div>
             <div class="contact-form">
                 <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
@@ -247,16 +247,20 @@
 
 
 
-    <section id="analyzer">
+    <section id="analyzer" class="text-analyzer">
         <div class="container">
             <div class="section-title">
-                <h2>Text Analyzer</h2>
+                <h2>🧠 Text Analyzer</h2>
+                <p>Paste your content below and get instant analysis!</p><br>
             </div>
-                <textarea id="textInput" rows="20" style="width: 100%; padding: 10px;"></textarea>
-                <br><br>
-                <button onclick="analyzeText()">Analyze Text</button>
-            <div id="analysisResults" style="margin-top: 20px;"></div>
+            <form onsubmit="event.preventDefault(); analyzeText();">
+                <textarea id="textInput" rows="10" placeholder="Type or paste your text here..."></textarea>
+                <button type="submit">✨ Analyze Text</button>
+            </form>
+            <div id="analysisResults" style="margin-top: 30px;"></div>
         </div>
     </section>
+    
+    
                     
                     
